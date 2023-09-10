@@ -1,0 +1,145 @@
+*{
+    box-sizing: content-box;
+}
+/*colors: #9E6565 #EBC5C5 #C08D8D #724242 #652525*/
+body{
+    background-color:#C08D8D;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*header*/
+
+header{
+    margin-top: 25px;
+}
+.imgLogo{
+    display: block;
+    max-width: 25%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #724242;
+    background-color: white;
+}
+
+.imgLogo:hover{
+    transform: scale(1.050);
+    transition: 1s ease-in;
+}
+
+/*navigation bar*/
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin:50px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #724242;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navBar span{
+    color: #C08D8D;
+}
+.navBar a{
+    text-decoration: none;
+    color:#EBC5C5;
+}
+
+.navBar a:hover{
+    text-shadow: 0 0 5px #fff ;
+    transition: 0.5s ease;
+}
+
+/*main with information*/
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.info{
+    width: auto;
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #724242;
+    transition: box-shadow 0.2s ease;
+}
+
+.info:hover{
+    box-shadow: 0 5px 10px white;
+    cursor: pointer;
+}
+.info img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.info h2{
+    text-transform: uppercase;
+}
+.promos{
+ width: 100%;
+ grid-column: 1 / span 3;
+ grid-row: 1;
+ box-shadow: 0 0 10px grey;
+}
+
+.promos:hover{
+    box-shadow: 0 5px 10px white;
+    transform: scale(1.025);
+    transition: 1s ease;
+}
+
+.promos img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.cut{
+grid-column: 1;
+grid-row: 2;
+}
+.styles{
+grid-column: 2;
+grid-row: 2;
+}
+
+.cut{
+grid-column: 3;
+grid-row: 2;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #724242;
+    margin-top:80px;
+}
+
+footer img{
+    width: 300px;
+    margin-top: 40px;
+}
+
+.footContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:25px;
+}
+
+.copyright{
+    font-size: 30px;
+    color:#EBC5C5;
+    height: auto;
+}
